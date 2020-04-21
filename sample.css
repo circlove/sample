@@ -1,0 +1,372 @@
+@media screen and (max-width:10000px) {
+/*横表示*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-style: normal;
+  margin: 0;
+  padding: 0px;
+  width: 100%;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  line-height: 60vh;
+  width: 80vw;
+  margin: 0 10vw;
+  font-size: 6em;
+  text-align: center;
+}
+
+img{
+  height: auto;
+  width: 90vw;
+  margin: 3vh 5vw;
+}
+
+
+.title{
+  height: 60vh;
+  width: 90vw;
+  margin: 0 5vw;
+}
+
+.top-wrapper img{
+  width: 90vw;
+  height: auto;
+  margin: 0 5vw;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
+}
+
+.top {
+  display: inline-block;
+  position: relative;
+  height: 20vh;/*高さ*/
+  line-height: 20vh;/*高さ*/
+  width: 50vw;
+  text-align: center;
+  padding: 0 40px 0 18px;/*文字の左右の余白*/
+  font-size: 3em;/*文字サイズ*/
+  font-weight: 500;
+  background: #ffc668;/*背景色*/
+  color: #black;/*文字色*/
+  box-sizing: border-box;
+  margin: 20vh 40vw 5vh 10vw;
+}
+
+.top:after {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+.top:after {
+  top: 0;
+  right: 0;
+  border-width: 10vh 5vw 10vh 0vw;
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+}
+
+.btn{
+  height: 30vh;
+  width: 80vw;
+  margin: 10vh 10vw;
+  border: 2px solid #000;
+  background-position: center;
+  background-size: cover;
+}
+
+.btn a{
+  display: inline-block;
+  line-height: 30vh;
+  width: 80vw;
+  color: #000;
+  text-align: center;
+  font-size: 3em;
+  font-weight: 500;
+}
+
+.basic{
+  background-image: url(spring.jpg);
+}
+
+.schedule{
+  background-image: url(summer.jpg);
+}
+
+.question{
+  background-image: url(fall.jpg);
+}
+
+.SNS{
+  background-image: url(winter.jpg);
+}
+
+table{
+  height: 90vh;
+  width: 90vw;
+  margin: 0 5vw;
+  border: 2px ridge #c0c0c0;
+}
+
+
+th,td{
+  text-align: center;
+  border: 2px groove #fff;
+}
+
+th{
+  background-color: #75A9FF;
+}
+
+
+.schedule-table{
+  height: 150vh;
+  border: 2px ridge #c0c0c0;
+}
+
+.schedule-table th{
+  background-color: #a6dd73;
+}
+
+
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+	font-family: 'FontAwesome', sans-serif;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+          margin: 5vh 0;
+}
+.cp_qa dt,.cp_qa dd {
+	position: relative;
+	padding: 0.5em;
+	box-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+	border-radius: 0.3em;
+}
+.cp_qa dt {
+	margin: 0 3em 1em 3em;
+	background: #ffe0b2;
+    margin-top: 5vh;
+}
+.cp_qa dd {
+	margin: 0 3em 1.5em 3em;
+	background: #b2ebf2;
+}
+/* 吹き出し▶︎ */
+.cp_qa dt::before,.cp_qa dd::before{
+	position: absolute;
+	z-index: 99;
+	top: 0.5em;
+	display: inline-block;
+	width: 0;
+	height: 0;
+	content: '';
+	border-style: solid;
+}
+/* 質問吹き出し▶︎ */
+.cp_qa dt::before {
+	left: -0.5em;
+	border-width: 5px 8.7px 5px 0;
+	border-color: transparent #ffe0b2 transparent transparent;
+}
+/* 答え吹き出し▶︎ */
+.cp_qa dd::before {
+	right: -0.5em;
+	border-width: 5px 0 5px 8.7px;
+	border-color: transparent transparent transparent #b2ebf2;
+}
+/* ?!アイコン */
+.cp_qa dt::after,.cp_qa dd::after {
+	font-size: 1.2em;
+	position: absolute;
+	top: 0;
+	color: #ffffff;
+	border-radius: 50%;
+	display: inline-block;
+	width: 1.5em;
+	height: 1.5em;
+	line-height: 1.2em;
+}
+/* ?アイコン */
+.cp_qa dt::after {
+	left: -2.5em;
+	margin: 0 0.5em 0 0;
+	padding: 0.2em 0.4em;
+	content: 'Q';
+	background: #f57c00;
+}
+/* !アイコン */
+.cp_qa dd::after {
+	right: -2.5em;
+	margin: 0 0 0 0.5em;
+	padding: 0.2em 0.55em;
+	content: 'A';
+	background: #0097a7;
+}
+
+.sns{
+  border-radius: 100px;
+}
+
+.twitter{
+  background-color: #55acee;
+}
+
+.instagram{
+  background-image: url(http://www.baltana.com/files/wallpapers-19/Instagram-Gradient-HD-Wallpaper-7187.png);
+  background-size:cover;
+
+}
+.youtube{
+  background-image: url(https://pics.prcm.jp/3a24bd2f54414/75296048/png/75296048.png);
+  background-position: center;
+  background-size: cover;
+}
+
+.twitter a, .instagram a{
+  color:white;
+}
+
+
+
+.fa-twitter, .fa-instagram{
+  color: white;
+}
+
+footer{
+  height: 150px;
+  background-color: #000000;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+
+
+.form{
+  height: 80px;
+  width: 30vw;
+  margin-top: 30px;
+  margin-left: 60vw;
+  background-color: #cbf7ff;
+  border-radius: 5px;
+}
+
+.form a{
+  width: 30vw;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  color: #000;
+  font-size: 0.6em;
+}
+
+.developer{
+  font-size: 0.4em;
+  margin-left: 20vw;
+}
+
+
+}
+
+
+
+/*----------------------------------------------------------*/
+
+@media screen and (max-width:500px) {
+/*縦表示*/
+
+tr{
+
+}
+
+.title{
+  height: 15vh;
+  margin: 3vh 5vw;
+}
+
+
+.top{
+  height: 10vh;
+  line-height: 10vh;
+  width: 50vw;
+  font-size: 1.5em;
+  margin: 10vh 40vw 5vh 10vw;
+}
+
+.top:after{
+  border-width: 5vh 5vw 5vh 0vw;
+}
+
+.btn{
+  height: 15vh;
+  margin: 5vh 10vw;
+}
+
+.btn a{
+  line-height: 15vh;
+  font-size: 2em;
+}
+
+.basix:active{
+  opacity: 0.7;
+}
+
+.basic{
+  margin-top: 0;
+}
+
+table{
+  height: 60vh;
+}
+
+.schedule-table{
+  height: 100vh;
+}
+
+
+.cp_qa *, .cp_qa *:after, .cp_qa *:before {
+  margin: 0 0;
+}
+
+.sns{
+  width: 90vw;
+  margin: 5vh 5vw;
+}
+
+.sns a{
+  width: 90vw;
+  font-size: 2.5em
+}
+
+.twitter{
+  margin-top: 0vh;
+}
+
+
+.form{
+  width: 90vw;
+  margin: 30px auto;
+}
+
+.form a{
+  width: 90vw;
+  font-size: 18px;
+}
+
+.developer{
+  font-size: 12px;
+  margin-left: 50vw;
+}
+
+
+}
