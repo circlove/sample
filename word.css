@@ -1,0 +1,31 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-style: normal;
+  margin: 0;
+  padding: 0px;
+  width: 100%;
+  height: auto;
+}
+
+h1{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  line-height: 20vh;
+  font-size: 6em;
+}
+
+img{
+  width: 90vw;
+  margin: 0 5vw;
+}
+
+p{
+  font-size: 3em;
+}
